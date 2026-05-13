@@ -288,7 +288,7 @@ export default function Navbar() {
 
           {/* ── Logo ── */}
           <div ref={logoRef} className="flex items-center gap-2.5 select-none">
-            <div className="relative flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-br from-[#5a9a3a]/80 to-[#2a5a18]/90 shadow-[0_2px_12px_rgba(90,154,58,0.35)]">
+            <div className="relative flex items-center justify-center w-9 h-9 rounded-xl bg-linear-to-br from-[#5a9a3a]/80 to-[#2a5a18]/90 shadow-[0_2px_12px_rgba(90,154,58,0.35)]">
               <Leaf size={17} className="text-[#d4e8c2]" />
               <span className="absolute inset-0 rounded-xl ring-1 ring-[#8fcf6a]/25" />
             </div>
@@ -318,7 +318,7 @@ export default function Navbar() {
                 {link.label}
                 <span
                   ref={(el) => { underlinesRef.current[i] = el; }}
-                  className="absolute bottom-0 left-0 right-0 h-px rounded-full bg-gradient-to-r from-[#8fcf6a] to-[#5a9a3a]/60"
+                  className="absolute bottom-0 left-0 right-0 h-px rounded-full bg-linear-to-r from-[#8fcf6a] to-[#5a9a3a]/60"
                   style={{ transform: "scaleX(0)", transformOrigin: "left center" }}
                   aria-hidden="true"
                 />
@@ -363,7 +363,7 @@ export default function Navbar() {
                 relative flex items-center gap-2 px-5 py-2.5
                 rounded-xl text-[0.82rem] font-semibold tracking-wide
                 text-[#1a3d10]
-                bg-gradient-to-br from-[#8fcf6a] via-[#6ab84e] to-[#4a9630]
+                bg-linear-to-br from-[#8fcf6a] via-[#6ab84e] to-[#4a9630]
                 shadow-[0_2px_16px_rgba(90,154,58,0.35)]
                 hover:shadow-[0_4px_24px_rgba(90,154,58,0.5)]
                 hover:brightness-110
@@ -376,7 +376,7 @@ export default function Navbar() {
             >
               {/* shine sweep */}
               <span
-                className="absolute inset-0 -translate-x-full hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-white/15 to-transparent pointer-events-none"
+                className="absolute inset-0 -translate-x-full hover:translate-x-full transition-transform duration-700 ease-in-out bg-linear-to-r from-transparent via-white/15 to-transparent pointer-events-none"
                 aria-hidden="true"
               />
               <Mail size={14} />
@@ -443,7 +443,7 @@ export default function Navbar() {
               ))}
 
               {/* Divider */}
-              <div className="my-2 h-px bg-gradient-to-r from-transparent via-[#5a9a3a]/25 to-transparent" data-menu-item />
+              <div className="my-2 h-px bg-linear-to-r from-transparent via-[#5a9a3a]/25 to-transparent" data-menu-item />
 
               {/* Mobile: Download CV */}
               <button
@@ -472,7 +472,7 @@ export default function Navbar() {
                 className="
                   flex items-center justify-center gap-2.5 px-4 py-3.5 rounded-xl mt-1
                   text-[0.9rem] font-semibold text-[#1a3d10]
-                  bg-gradient-to-br from-[#8fcf6a] via-[#6ab84e] to-[#4a9630]
+                  bg-linear-to-br from-[#8fcf6a] via-[#6ab84e] to-[#4a9630]
                   shadow-[0_2px_16px_rgba(90,154,58,0.3)]
                   hover:brightness-110 hover:shadow-[0_4px_20px_rgba(90,154,58,0.45)]
                   transition-all duration-200
