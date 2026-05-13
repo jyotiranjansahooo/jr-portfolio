@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --matcha-50:  #f0f7e8;
+  --matcha-100: #d4e8c2;
+  --matcha-200: #a8d18a;
+  --matcha-300: #7ab85a;
+  --matcha-400: #5a9a3a;
+  --matcha-500: #3d7a26;
+  --matcha-600: #2a5a18;
+  --matcha-700: #1a3d10;
+  --matcha-800: #0f2808;
+  --cream:      #f5efe6;
+  --cream-muted:#e8ddd0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: #071203;
+  color: #d4e8c2;
+}
